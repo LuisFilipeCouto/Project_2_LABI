@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Deteção de Objetos</title>
+
+	<!-- Custom fonts for this template-->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Page level plugin CSS-->
+	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+	<!-- Custom styles for this template-->
+	<link href="css/sb-admin.css" rel="stylesheet">
+
+		<!-- CSS para icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+	<style>
+
+		#front_video{
+			float: left;
+			display: block;
+			padding-left: 10px;
+			padding-top: 10px;
+			width: 50%;
+			height: 380px;
+		}
+
+
+		#front_image{
+			float: left;
+			display: block;
+			padding-left: 10px;
+			padding-top: 10px;
+			width: 50%;
+			height: 380px;
+		}
+
+		#footer{
+			background-color: #212529;
+		}
+		
+		#footer_image{
+			width: 100%;
+			height: 70px;
+		}
+
+	</style>
+
+</head>
+
+
+<body id="page-top">
+
+	<!-- BOTAO HOME NA NAVBAR PARA VOLTAR PARA A PAGINA PRINCIPAL -->
+	<nav class="navbar navbar-expand navbar-dark bg-dark static-top" id="navbar">
+
+		<a class="navbar-brand mr-1" href="index.html"> <i class="fa fa-home" style="font-size:20px"></i> Aplicação Web</a>
+
+	</nav>
+
+
+	<div id="wrapper">
+
+
+		<!-- SIDEBAR -->
+		<ul class="sidebar navbar-nav">
+		
+			<li class="nav-item dropdown">
+
+        		<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+         			<i class="fas fa-fw fa-folder"></i>
+
+          			<span>Listagens</span>
+
+        		</a>
+
+        		<div class="dropdown-menu" aria-labelledby="pagesDropdown">
+
+          			<h6 class="dropdown-header">Listar:</h6>
+
+         		 	<a class="dropdown-item" href="objetos.html">Objetos</a>
+
+          			<a class="dropdown-item" href="imagens.html">Imagens</a>
+
+          			<div class="dropdown-divider"></div>
+
+        		</div>
+
+      		</li>
+			
+
+			<li class="nav-item">
+
+       			<a class="nav-link" href="upload.html">
+
+          		&nbsp<i class="fas fa-file-upload"></i>
+
+          		<span>&nbspCarregar Imagem</span></a>
+
+      		</li>
+
+
+      		<li class="nav-item">
+
+       			<a class="nav-link" href="pesquisar.html">
+
+          		&nbsp<i class="fas fa-search"></i>
+
+          		<span>Pesquisar Objetos</span></a>
+
+      		</li>
+
+      		<li class="nav-item">
+
+       			<a class="nav-link" href="info.html">
+
+         		 &nbsp&nbsp<i class="fas fa-info" style="font-size: 20px;"></i>
+          
+          		<span>&nbspInformações</span></a>
+          		
+     		 </li>
+
+		</ul>
+
+		<div id="content-wrapper">
+
+			<div class="container-fluid">
+
+				<!-- BEM VINDO AO SITE-->
+				<div class="card mb-3">
+
+					<div class="card-header">
+
+						<i class="fa fa-handshake-o" style="vertical-align: middle; font-size: 25px"></i>
+
+						Bem Vindo!
+
+					</div>
+
+					<div class="card-body">
+
+						<a style="font-family:courier;">Bem vindo à nossa aplicação web! Explore o site para ver quais são as funcionalidades disponiveis.</a>
+
+					</div>
+					
+				</div>
+
+
+				<!-- COMO FUNCIONA A DETEÇÃO DE OBJETOS -->
+				<div class="card mb-3" id="#tabela_info">
+
+					<div class="card-header">
+
+						<i class="far fa-question-circle" style="vertical-align: middle; font-size: 25px"></i>
+
+						Deteção de Objetos - Como funciona?
+
+					</div>
+
+					<div class="card-body">
+
+						<div id="row1">
+								 
+								<video id="front_video" controls>
+  									
+  								<source src="YOLO.mp4" type="video/mp4">
+									Este browser não suporta esta funcionalidade.
+									<a href="https://www.youtube.com/watch?v=4eIBisqx9_g">Link para este video</a> 
+								
+								</video> 
+
+						</div>
+
+						 <div id="row2">
+
+							<img id="front_image" src="Imagens/object_detection2.jpeg" alt="Imagem - object_detection2" />
+						
+						 </div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- FOOTER DO WEBSITE -->
+			<footer class="sticky-footer" id="footer">
+
+				<div class="container my-auto">
+
+					<div class="copyright text-center my-auto">
+
+						<img id="footer_image" src="Imagens/UA_logo.svg" alt="Universidade de Aveiro" />
+
+					</div>
+
+				</div>
+
+			</footer>
+
+		</div>
+
+	</div>
+
+	<!-- Bootstrap core JavaScript-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Core plugin JavaScript-->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="js/sb-admin.min.js"></script>
+
+</body>
+
+</html>

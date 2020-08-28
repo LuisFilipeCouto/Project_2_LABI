@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Carregar Imagem</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <style>
+
+    #footer{
+      background-color: #212529;
+    }
+    
+    #footer_image{
+      width: 100%;
+      height: 70px;
+    }
+
+  </style>
+
+</head>
+
+<body id="page-top">
+
+ <!-- BOTAO HOME NA NAVBAR PARA VOLTAR PARA A PAGINA PRINCIPAL -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top" id="navbar">
+
+    <a class="navbar-brand mr-1" href="index.html"> <i class="fa fa-home" style="font-size:20px"></i> Aplicação Web</a>
+
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          <i class="fas fa-fw fa-folder"></i>
+
+          <span>Listagens</span>
+
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+
+          <h6 class="dropdown-header">Listar:</h6>
+
+            <a class="dropdown-item" href="objetos.html">Objetos</a>
+
+            <a class="dropdown-item" href="imagens.html">Imagens</a>
+
+          <div class="dropdown-divider"></div>
+
+        </div>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="upload.html">
+
+        &nbsp<i class="fas fa-file-upload"></i>
+
+        <span>&nbspCarregar Imagem</span></a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="pesquisar.html">
+
+        &nbsp<i class="fas fa-search"></i>
+
+        <span>Pesquisar Objetos</span></a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="info.html">
+
+        &nbsp&nbsp<i class="fas fa-info" style="font-size: 20px;"></i>
+          
+        <span>&nbspInformações</span></a>
+
+      </li>
+
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- BARRA DE PROCURA-->
+        <div class="card mb-3">
+
+          <div class="card-header">
+
+            <form action=""> <!-- Aqui devia estar o ficheiro JS que trata dos dados-->
+                
+              <input type="file" name="put" accept="image/*">
+              <input type="submit" value="Submeter Imagem">
+
+            </form>
+
+            <p></p>
+
+            <span style="font-size: 30px">Escolha uma imagem para enviar para o sistema</span></a>
+
+          </div>
+
+      </div>
+
+
+      <!-- FOOTER DO WEBSITE -->
+      <footer class="sticky-footer" id="footer">
+
+        <div class="container my-auto">
+
+          <div class="copyright text-center my-auto">
+
+            <img id="footer_image" src="Imagens/UA_logo.svg" alt="Universidade de Aveiro" />
+
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+</body>
+
+</html>
