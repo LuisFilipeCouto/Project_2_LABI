@@ -2,4 +2,4 @@
 *.js linguist-detectable=true
 *.html linguist-detectable=true
 *.python linguist-detectable=true
-*.tex linguist-detectable=true
+*.tex linguist-detectable=false
